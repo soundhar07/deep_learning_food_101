@@ -55,6 +55,24 @@ The notebook explores and compares the following architectures:
 - ViT (used in ensembles)
 - Ensembles: ResNet50 + ViT, ConvNeXt + EfficientNet
 
+**ResNet50 + ViT: A Hybrid Approach to Computer Vision**
+
+This project implements a **hybrid deep learning model** that combines the strengths of Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs) for image analysis. The architecture leverages ResNet50 for local spatial feature extraction and ViT’s transformer-based self-attention for global contextual understanding. This synergy enables robust and comprehensive modeling of both fine details and long-range dependencies in computer vision tasks.
+
+**Key Model Highlights:**
+
+- **CNN Component (ResNet50):**  
+  Extracts hierarchical local features from input images—edges, textures, and spatial relationships—using convolutional layers.
+
+- **ViT Component:**  
+  Applies transformer self-attention to the CNN feature map, enabling global context modeling and learning of long-range dependencies across the entire image.
+
+- **Synergy:**  
+  By merging both approaches, the model benefits from the spatial precision of CNNs and the contextual depth of transformers, resulting in superior performance and robust image understanding.
+
+***
+
+
 Summary:
 - ResNet50, EfficientNet, and ConvNeXt: strong performance, faster training.
 - Ensembles (ResNet50 + ViT, ConvNeXt + EfficientNet): best results but significantly longer training and higher resource use.
@@ -150,12 +168,3 @@ Tips:
 - Log experiment hyperparameters and model checkpoints (use TensorBoard or Weights & Biases for full experiment tracking).
 - Save the exact code and commit hash used for each reported result.
 
-## License
-Specify your desired license (e.g., MIT). Example:
-This project is licensed under the MIT License — see the LICENSE file for details.
-
-## Contributing
-Contributions are welcome. Please open issues or pull requests to report bugs, request features, or submit improvements (e.g., new architectures, augmentation strategies, or training recipes).
-
-## Contact
-For questions or suggestions, open an issue or contact the maintainer: @soundhar07 (GitHub).
