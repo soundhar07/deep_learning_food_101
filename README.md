@@ -70,13 +70,6 @@ This project implements a **hybrid deep learning model** that combines the stren
 - **Synergy:**  
   By merging both approaches, the model benefits from the spatial precision of CNNs and the contextual depth of transformers, resulting in superior performance and robust image understanding.
 
-***
-
-
-Summary:
-- ResNet50, EfficientNet, and ConvNeXt: strong performance, faster training.
-- Ensembles (ResNet50 + ViT, ConvNeXt + EfficientNet): best results but significantly longer training and higher resource use.
-Recommendation: use ResNet50 or EfficientNet for a balance of accuracy and efficiency.
 
 ## Requirements
 Python 3.8+ recommended.
